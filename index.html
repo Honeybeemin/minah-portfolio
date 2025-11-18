@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minah | Cybersecurity Portfolio</title>
+    <meta name="description" content="Modern developer portfolio with terminal-inspired design">
+    <meta name="author" content="Minah">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/animations.css">
+</head>
+<body>
+    <!-- Terminal Boot Screen - signed: serozr -->
+    <div id="bootScreen" class="boot-screen">
+        <div class="boot-content">
+            <div class="boot-header">
+                <pre class="ascii-art">
+ ░▒▓███████▓▒░▒▓████████▓▒░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+ ░▒▓██████▓▒░░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓██████▓▒░  
+       ░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░     
+       ░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓███████▓▒░░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░     
+                                                                                                  
+                                                                                                  
+
+
+                </pre>
+            </div>
+            <div class="boot-terminal">
+                <p><span class="boot-prompt">[SYSTEM]</span> <span class="boot-text">Initializing system...</span></p>
+                <p><span class="boot-prompt">[SEC]</span> <span class="boot-text">Loading security modules</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[FS]</span> <span class="boot-text">Mounting forensic tools</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[NET]</span> <span class="boot-text">Starting network monitoring</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[IR]</span> <span class="boot-text">Preparing incident response environment</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[EXEC]</span> <span class="boot-text">Loading portfolio.sh</span> <span class="boot-status boot-ok">[Ready..]</span></p>
+            </div>
+            <div class="boot-progress">
+                <div class="boot-progress-bar"></div>
+            </div>
+            <p class="boot-footer">Press any key to continue... <span class="boot-sign">— Minah</span></p>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">&gt;_cyberops.sh <span class="logo-sign">· Minah</span></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#experience" onclick="closeMenu()">Experience</a>
+                <a href="#education" onclick="closeMenu()">Education</a>
+                <a href="#certifications" onclick="closeMenu()">Certifications</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <a href="#blog" onclick="closeMenu()">Blog</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <div class="tag"> // Cybersecurity, Forensics & OSINT </div>
+            <h1>Minah Nguyen <small class="inline-sign">(Octavia)</small></h1>
+            <p class="subtitle">Building skills in cyber defense, threat detection, and digital forensics — crafted by Minah </p>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                </div>
+                <div class="terminal-text">
+                    <p><span class="prompt">$</span> <span class="command">./get_profile.sh</span></p>
+                    <p class="output">Focused on cybersecurity through:</p>
+                    <p class="output"><span class="prompt">&gt;</span> Digital Forensics</p>
+                    <p class="output"><span class="prompt">&gt;</span> Incident Response</p>
+                    <p class="output"><span class="prompt">&gt;</span> OSINT & Investigaton</p>
+                    <br>
+                    <p><span class="prompt">$</span> <span class="command">cat contact.txt</span></p>
+                    <p class="output">GitHub: <a href="https://github.com/Honeybeemin" target="_blank" class="link">github.com/Honeybeemin</a> <span class="muted">· by Minah</span></p>
+                    <br>
+                    <p><span class="prompt">$</span> <span class="output">_</span><span style="animation: blink 1s infinite;">|</span></p>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <!-- Quick sign -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hi! I'm <span class="highlight">Minah </span>, a cybersecurity student passionate about digital forensics, 
+                        incident response, and uncovering how threats operate behind the scenes. <span class="about-sign"> </span>
+                    </p>
+                    <p>
+                        Whether I'm analyzing malware datasets, completing hands-on labs, or working through CTF-style challenges, 
+                        I focus on understanding systems deeply and approaching problems with precision and clarity.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Cups of Matcha</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dot dot-red"></div>
+                            <div class="code-dot dot-yellow"></div>
+                            <div class="code-dot dot-green"></div>
+                            <span class="code-title">about.js</span>
+                        </div>
+                        <div class="code-content">
+<pre><code><span class="code-keyword">const</span> <span class="code-variable">analyst</span> = {
+                        <span class="code-property">name</span>: <span class="code-string">"Minah (Octavia)"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Cybersecurity Student"</span>,
+  <span class="code-property">location</span>: <span class="code-string">"Georgia, USA"</span>,
+  <span class="code-property">interests</span>: [
+    <span class="code-string">"Digital Forensics"</span>,
+    <span class="code-string">"Incident Response"</span>,
+    <span class="code-string">"Threat Analysis"</span>,
+    <span class="code-string">"OSINT"</span>
+  ],
+  <span class="code-property">currentlyLearning</span>: [
+    <span class="code-string">"Malware Detection"</span>,
+    <span class="code-string">"Incident Response Playbooks"</span>
+  ],
+    <span class="code-property">funFact</span>: <span class="code-string">"I think of everyday problems like mini incident response cases. 
+"</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category fade-in">
+                <h3>Cybersecurity Fundamentals</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Security Principles</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Networking Basics</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in" style="animation-delay: 0.1s;">
+                <h3>Digital Forensics & Investigation</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>OSINT Techniques</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="40%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Evidence Collection</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Incident Response Basics</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in" style="animation-delay: 0.2s;">
+                <h3>Networking & Systems</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>TCP/IP</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="55%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Windows/Linux Security</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="65%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Network Monitoring</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+        <!-- Cybersecurity Training & Practical Experience -->
+        <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Cybersecurity Training & Practical Experience</h3>
+                <div class="timeline-date">2022 – Present</div>
+                <p class="timeline-description">
+                    Gaining hands-on cybersecurity experience through CodePath CYB101 & CYB102, 
+                    TryHackMe labs, and CTF challenges. Practiced digital forensics, incident response, 
+                    OSINT investigations, network fundamentals, and system security concepts through 
+                    guided exercises and real-world cyber scenarios.
+                </p>
+            </div>
+        </div>
+
+        <!-- Academic Cybersecurity Projects -->
+        <div class="timeline-item fade-in" style="animation-delay: 0.1s;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Academic Cybersecurity Projects</h3>
+                <div class="timeline-date">2023 – Present</div>
+                <p class="timeline-description">
+                    Completed cybersecurity-related academic projects involving digital forensics, 
+                    system analysis, security case studies, and scenario-based investigations. 
+                    Strengthened analytical thinking, documentation practices, and problem-solving 
+                    through structured technical coursework.
+                </p>
+            </div>
+        </div>
+
+        <!-- Nail Technician -->
+        <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Nail Technician</h3>
+                <div class="timeline-date">2022 – Present</div>
+                <p class="timeline-description">
+                    Delivering high-quality client services in a fast-paced environment while maintaining 
+                    strong communication, precision, and professionalism. Developed transferable skills 
+                    including attention to detail, customer support, organization, and strict adherence to 
+                    safety and sanitation standards. Strengthened problem-solving and client-facing skills 
+                    through daily hands-on interaction.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <section id="education">
+        <h2>Education</h2>
+<div class="timeline">
+
+
+        <!-- Georgia State University -->
+        <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Georgia State University – B.B.A. CIS (Cybersecurity Concentration)</h3>
+                <div class="timeline-date">2021 – Present</div>
+                <p class="timeline-description">
+                    Pursuing a cybersecurity-focused degree with coursework in digital forensics, 
+                    information security, networking, systems analysis, and applied cybersecurity labs. 
+                    Building analytical and technical skills through scenario-based learning.
+                </p>
+            </div>
+        </div>
+
+        <!-- TryHackMe -->
+        <div class="timeline-item fade-in" style="animation-delay: 0.1s;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>TryHackMe (Hands-On Cyber Labs)</h3>
+                <div class="timeline-date">2022 – Present</div>
+                <p class="timeline-description">
+                    Completing practical labs in digital forensics, OSINT, Linux, networking, and beginner 
+                    offensive/defensive exercises. Progressing through guided cyber challenges and real-world 
+                    scenarios to build hands-on technical skills.
+                </p>
+            </div>
+        </div>
+
+        <!-- CodePath CYB101 & CYB102 -->
+        <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>CodePath CYB101 & CYB102</h3>
+                <div class="timeline-date">2023 – Present</div>
+                <p class="timeline-description">
+                    Completed foundational cybersecurity courses focused on incident response, phishing analysis, 
+                    DoS detection, and system security fundamentals. Gained practical experience through structured 
+                    labs and guided cybersecurity exercises.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications & Awards</h2>
+        <div class="certifications-grid">
+            <div class="cert-card fade-in">
+                <div class="cert-icon">🏆</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Web Development</div>
+                        <div class="cert-issuer">FreeCodeCamp</div>
+                    </div>
+                </div>
+                <h3>Responsive Web Design</h3>
+                <p class="cert-description">
+                    Completed comprehensive curriculum covering HTML5, CSS3, Flexbox, Grid, and responsive design principles.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2024</span>
+                    <a href="#" class="cert-link">Verify &rarr;</a>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.1s;">
+                <div class="cert-icon">🔐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Cybersecurity</div>
+                        <div class="cert-issuer">Coursera</div>
+                    </div>
+                </div>
+                <h3>Ethical Hacking Fundamentals</h3>
+                <p class="cert-description">
+                    Learned penetration testing, vulnerability assessment, and security best practices for web applications.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2024</span>
+                    <a href="#" class="cert-link">Verify &rarr;</a>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.2s;">
+                <div class="cert-icon">⚛️</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">JavaScript</div>
+                        <div class="cert-issuer">Udemy</div>
+                    </div>
+                </div>
+                <h3>Advanced React & Redux</h3>
+                <p class="cert-description">
+                    Mastered modern React patterns, state management, hooks, and building scalable applications.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2023</span>
+                    <a href="#" class="cert-link">Verify &rarr;</a>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.3s;">
+                <div class="cert-icon">🎨</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Design</div>
+                        <div class="cert-issuer">Google</div>
+                    </div>
+                </div>
+                <h3>UX Design Professional</h3>
+                <p class="cert-description">
+                    Comprehensive training in user research, wireframing, prototyping, and usability testing methodologies.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2023</span>
+                    <a href="#" class="cert-link">Verify &rarr;</a>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.4s;">
+                <div class="cert-icon">🌐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Backend</div>
+                        <div class="cert-issuer">Node.js Foundation</div>
+                    </div>
+                </div>
+                <h3>Node.js Application Developer</h3>
+                <p class="cert-description">
+                    Professional certification in building scalable server-side applications with Node.js and Express.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2023</span>
+                    <a href="#" class="cert-link">Verify &rarr;</a>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.5s;">
+                <div class="cert-icon">⭐</div>
+                <div class="cert-badge award-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Award</div>
+                        <div class="cert-issuer">Hackathon 2024</div>
+                    </div>
+                </div>
+                <h3>Best UI/UX Design Award</h3>
+                <p class="cert-description">
+                    First place winner for innovative interface design and user experience at the Regional Web Dev Hackathon.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">2024</span>
+                    <span class="cert-badge-text">🥇 Winner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <h3>� Portfolio Site</h3>
+                <p>Modern portfolio with cyber-inspired design, terminal aesthetics, and smooth animations. <span class="project-sign">(by serozr)</span></p>
+                <a href="#" class="project-link">View More &rarr;</a>
+            </div>
+            
+            <div class="project-card fade-in" style="animation-delay: 0.1s;">
+                <h3>💻 Web Applications</h3>
+                <p>Full-stack web applications with modern frameworks, responsive design, and optimized performance.</p>
+                <a href="#" class="project-link">Explore &rarr;</a>
+            </div>
+            
+            <div class="project-card fade-in" style="animation-delay: 0.2s;">
+                <h3>🎨 UI/UX Projects</h3>
+                <p>Creative design projects focusing on user experience and modern interface design principles.</p>
+                <a href="#contact" class="project-link">Get Notified &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid">
+            <div class="blog-card fade-in">
+                <div class="blog-header">
+                    <div class="blog-date">October 15, 2025</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Building Immersive Web Experiences <span class="post-sign">— serozr</span></h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">JavaScript</span>
+                        <span class="blog-tag">CSS Animations</span>
+                        <span class="blog-tag">WebGL</span>
+                    </div>
+                    <p>Exploring advanced techniques for creating psychedelic and interactive web experiences using vanilla JavaScript and CSS...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <div class="blog-card fade-in" style="animation-delay: 0.1s;">
+                <div class="blog-header">
+                    <div class="blog-date">October 10, 2025</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Modern Web Design Trends</h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">UI/UX</span>
+                        <span class="blog-tag">Design</span>
+                        <span class="blog-tag">Trends</span>
+                    </div>
+                    <p>A deep dive into cyberpunk aesthetics, glassmorphism, and terminal-inspired designs that are shaping the future of web...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <div class="blog-card fade-in" style="animation-delay: 0.2s;">
+                <div class="blog-header">
+                    <div class="blog-date">October 5, 2025</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Performance Optimization Tips</h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Performance</span>
+                        <span class="blog-tag">Optimization</span>
+                        <span class="blog-tag">Best Practices</span>
+                    </div>
+                    <p>Learn how to optimize heavy animations and interactive elements without sacrificing visual appeal and user experience...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:serozr@example.com">Minahnnguyen01@gmail.com</a>
+                </div>
+
+                <div class="contact-item fade-in" style="animation-delay: 0.1s;">
+                    <div class="contact-icon">💼</div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/Honeybeemin" target="_blank">github.com/Honeybeemin</a>
+                </div>
+
+                <div class="contact-item fade-in" style="animation-delay: 0.2s;">
+                    <div class="contact-icon">🔗</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/minahnguyen" target="_blank">linkedin.com/in/Minahnguyen</a>
+                </div>
+            </div>
+
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <label>$ name --input</label>
+                        <input type="text" placeholder="serozr" required>
+                        <small class="field-sign">Signed by serozr</small>
+                    </div>
+                    <div class="form-group">
+                        <label>$ email --input</label>
+                        <input type="email" placeholder="serozr@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>$ message --input</label>
+                        <textarea placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <p>&copy; 2025 <span class="signature">serozr</span>. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Made with ❤️ using HTML, CSS & JavaScript</p>
+        <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Site signed and maintained by <strong>serozr</strong></p>
+    </footer>
+
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
+
+<!-- End of file - signed: serozr -->
