@@ -1140,3 +1140,13 @@ footer .signature {
         flex-direction: column;
     }
 }
+/* --- Fix for Verify button not clickable --- */
+.cert-footer a {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.cert-card::after {
+    pointer-events: none;
+}
