@@ -1,24 +1,47 @@
 <h2 align="center">
-  🚀 Cyber Portfolio - Developer Portfolio Website<br/>
-  <a href="" target="_blank">Click to Check Live</a>
+  🛡️ Minah Nguyen — Cybersecurity & IT Portfolio
+<br/>
+  <a href="https://honeybeemin.github.io/minah-portfolio/" target="_blank">
+🌐 View Live Portfolio
+</a>
+
 </h2>
 <div align="center">
-  <img alt="Demo" src="src\assets\images\mockup.png" />
+  <img alt="Portfolio Preview" src="src/assets/images/mockup.png" />
+
 </div>
 <center>
 
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/license-mit.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/serozr/cyber-portfolio?style=for-the-badge&logo=github&color=red) 
+![GitHub Repo stars](https://img.shields.io/github/stars/Honeybeemin/minah-portfolio?style=for-the-badge&logo=github&color=red)
 &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/serozr/cyber-portfolio?style=for-the-badge&logo=github&color=red)
+![GitHub forks](https://img.shields.io/github/forks/Honeybeemin/minah-portfolio?style=for-the-badge&logo=github&color=red)
 
 
 
 </center>
 
+---
 
-## ✨ Features
+## 👋 About Me
+
+Cybersecurity and IT student with hands-on experience in security labs,
+networking fundamentals, cloud concepts, and data-driven projects.
+This portfolio highlights my technical skills, certifications,
+and projects as I prepare for cybersecurity and IT internship roles.
+
+## ✨ Portfolio Highlights
+
+
+This site is based on a terminal/cyber-themed portfolio template that I customized with my content (projects, skills, experience, and links).  
+The template includes modern UI effects and JavaScript interactions to create a clean, interactive experience.
+
+### What I customized
+- Updated all content to reflect my cybersecurity & IT background
+- Added my projects, certifications, and links
+- Edited layout sections and styling to match my brand
+- Maintained responsive behavior for mobile and desktop
 
 ### 🎨 Design & UI
 - **Terminal Boot Screen** - Immersive boot sequence animation on page load
@@ -48,19 +71,22 @@
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Running the Portfolio Locally
+
+If you’d like to explore or modify this portfolio locally, follow the steps below.
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
-- Basic text editor (VS Code recommended)
-- Optional: Local web server (Live Server, Python SimpleHTTPServer, etc.)
+- VS Code or any text editor
+- Optional: Local web server (Live Server or Python)
 
-### Installation
+### Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/serozr/cyber-portfolio.git
-   cd cyber-portfolio
+   git clone https://github.com/Honeybeemin/minah-portfolio.git
+   cd minah-portfolio
+
    ```
 
 2. **Open in browser**
@@ -139,102 +165,61 @@ Edit the CSS variables or colors directly in `src/css/main.css`:
 /* Card background */
 rgba(26, 26, 26, 0.8)
 ```
-
-### Modifying Content
-
-1. **Personal Information**: Edit `index.html` to update your name, bio, and details
-2. **Skills**: Modify the skills sections and percentage values
-3. **Projects**: Add your own projects in the projects section
-4. **Social Links**: Update contact information and social media links
-
-### Adding New Sections
-
-1. Add section HTML in `index.html`
-2. Style it in `src/css/main.css`
-3. Add animation triggers in `src/js/main.js` if needed
-
 ---
+
+## 🔧 Customizing the Portfolio
+
+This portfolio is built on a customizable template that I adapted for my
+cybersecurity and IT background. The structure allows easy updates to content
+and layout without changing the core design.
+
+### Content Updates
+- **Personal Information**: Update text and sections in `index.html`
+- **Skills & Experience**: Edit listed skills, certifications, and experience
+- **Projects**: Add or update projects showcased in the portfolio
+- **Contact Information**: Modify social links and contact details
+
+### Layout Adjustments
+- Layout and styling can be adjusted through the CSS files in `src/css/`
+- Minor behavior changes can be made in the JavaScript files under `src/js/`
 
 ## 🌐 Browser Support
 
-| Browser | Version |
-|---------|---------|
-| Chrome  | ✅ Latest |
-| Firefox | ✅ Latest |
-| Safari  | ✅ Latest |
-| Edge    | ✅ Latest |
-| Opera   | ✅ Latest |
+This portfolio is designed to work on all modern browsers.
 
-**Note:** IE11 is not supported due to modern CSS and JavaScript features.
+- Chrome
+- Firefox
+- Safari
+- Edge
 
----
-
-## 📱 Responsive Breakpoints
-
-- **Desktop**: > 768px
-- **Tablet**: 768px
-- **Mobile**: < 768px
+*Internet Explorer is not supported.*
 
 ---
 
-## ⚡ Performance
+## ⚡ Performance & Accessibility
 
-### Optimization Features
-- **Intersection Observer API** for lazy loading
-- **CSS animations** over JavaScript animations
-- **Minimal dependencies** (no external libraries)
-- **Optimized asset loading**
-- **Efficient event listeners**
+This portfolio prioritizes a clean, responsive user experience using
+modern web standards. Performance and accessibility considerations are
+handled through lightweight design choices and browser-native features
+provided by the underlying template.
 
-### Lighthouse Scores
-*(Run your own Lighthouse audit to display scores)*
-
-- Performance: 95+
-- Accessibility: 90+
-- Best Practices: 95+
-- SEO: 95+
+Formal performance audits (e.g., Lighthouse) can be run as needed.
 
 ---
 
 ## 🛠️ Built With
 
-- **HTML5** - Semantic markup
-- **CSS3** - Styling and animations
-  - CSS Grid
-  - Flexbox
-  - CSS Custom Properties
-  - Keyframe Animations
-- **Vanilla JavaScript** - Interactivity and dynamic content
-  - Intersection Observer API
-  - DOM Manipulation
-  - Event Handling
+- **HTML5** – Semantic structure
+- **CSS3** – Layout and visual styling
+- **JavaScript (Vanilla)** – Client-side interactivity
 
 ---
 
-## 📝 To-Do / Future Enhancements
+## 📝 Future Improvements
 
-- [ ] Add dark/light theme toggle
-- [ ] Implement form backend integration
-- [ ] Add blog section with real CMS
-- [ ] Create project detail pages
-- [ ] Add loading animations for images
-- [ ] Implement PWA features
-- [ ] Add multilingual support
-- [ ] Create admin panel for content management
-- [ ] Add search functionality for blog posts
-- [ ] Implement analytics tracking
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Continue refining content and projects
+- Add additional cybersecurity-focused work and labs
+- Improve accessibility and usability as the portfolio evolves
 
 ---
 
@@ -244,36 +229,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**serozr**
+**Minah Nguyen**
 
-- GitHub: [@serozr](https://github.com/serozr)
-- Twitter: [@serozr](https://twitter.com/serodxr)
-- Portfolio: [serozr.me](https://www.serozr.me/)
+- GitHub: [@Honeybeemin](https://github.com/Honeybeemin)
+- Portfolio: https://honeybeemin.github.io/minah-portfolio/
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- Inspiration from terminal-based interfaces and cyberpunk aesthetics
-- Color scheme inspired by classic terminal green
-- Icons and emojis for visual enhancement
-- The open-source community for continuous inspiration
+- Portfolio template and design inspiration from open-source community resources
+- Visual styling influenced by terminal-based and cyber-themed interfaces
+- Open-source tools that support learning and experimentation
 
----
+--- 
 
-## 📞 Support
-
-If you like this project, please give it a ⭐️ on GitHub!
-
-For questions or support, please open an issue or contact me through the portfolio website.
-
----
 
 <div align="center">
   
-**Made with ❤️ by serozr**
-
-*Crafted with attention to detail and a passion for web development*
 
 </div>
