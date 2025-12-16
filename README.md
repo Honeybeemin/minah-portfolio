@@ -31,7 +31,7 @@ networking fundamentals, cloud concepts, and data-driven projects.
 This portfolio highlights my technical skills, certifications,
 and projects as I prepare for cybersecurity and IT internship roles.
 
-## ✨ Portfolio Highlights
+## Portfolio Highlights
 
 
 This site is based on a terminal/cyber-themed portfolio template that I customized with my content (projects, skills, experience, and links).  
@@ -43,14 +43,14 @@ The template includes modern UI effects and JavaScript interactions to create a 
 - Edited layout sections and styling to match my brand
 - Maintained responsive behavior for mobile and desktop
 
-### 🎨 Design & UI
+### Design & UI
 - **Terminal Boot Screen** - Immersive boot sequence animation on page load
 - **Cyberpunk Aesthetic** - Neon green (#00FF8C) and cyan (#00D9FF) color scheme
 - **Glassmorphism Effects** - Modern transparent card designs with backdrop blur
 - **Smooth Animations** - Intersection Observer API for scroll-triggered animations
 - **Responsive Design** - Mobile-first approach, works on all devices
 
-### 🛠️ Technical Features
+### Technical Features
 - **Pure Vanilla JavaScript** - No frameworks or libraries required
 - **CSS Grid & Flexbox** - Modern layout techniques
 - **Custom Animations** - Handcrafted CSS keyframe animations
@@ -58,7 +58,7 @@ The template includes modern UI effects and JavaScript interactions to create a 
 - **Smooth Scrolling** - Enhanced navigation experience
 - **Interactive Elements** - Hover effects and transitions throughout
 
-### 📱 Sections
+### Sections
 - **Hero** - Welcome section with terminal window
 - **About** - Personal introduction with statistics and code snippet
 - **Skills** - Categorized skill sets with animated progress bars
@@ -71,100 +71,25 @@ The template includes modern UI effects and JavaScript interactions to create a 
 
 ---
 
-## Running the Portfolio Locally
+## Running the Portfolio Locally (Optional)
 
-If you’d like to explore or modify this portfolio locally, follow the steps below.
+This portfolio can be viewed locally by opening `index.html` in a web browser
+or by using a simple local server during development.
+
+---
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - VS Code or any text editor
 - Optional: Local web server (Live Server or Python)
 
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Honeybeemin/minah-portfolio.git
-   cd minah-portfolio
-
-   ```
-
-2. **Open in browser**
-   
-   **Option A: Direct File Access**
-   ```bash
-   # Simply open index.html in your browser
-   # Windows
-   start index.html
-   
-   # macOS
-   open index.html
-   
-   # Linux
-   xdg-open index.html
-   ```
-
-   **Option B: Local Server (Recommended)**
-   ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # Using Node.js (http-server)
-   npx http-server
-   
-   # Using VS Code Live Server extension
-   # Right-click on index.html and select "Open with Live Server"
-   ```
-
-3. **Navigate to**
-   ```
-   http://localhost:8000
-   ```
-
 ---
 
-## Project Structure
+## Repository Overview
 
-```
-cyber-portfolio/
-│
-├── index.html            # Main HTML entry point
-├── LICENSE               # MIT License
-├── README.md             # Project documentation
-│
-└── src/                  # Source files
-  ├── assets/           # Static assets
-  │   └── images/       # Image files
-  │
-  ├── css/              # Stylesheets
-  │   ├── animations.css # Custom animation keyframes
-  │   └── main.css       # Main stylesheet
-  │
-  └── js/               # JavaScript files
-    └── main.js        # Interactions and animations
-```
+This repository contains the source code and assets for my personal
+cybersecurity and IT portfolio website.
 
----
-
-## Customization Guide
-
-### Changing Colors
-
-Edit the CSS variables or colors directly in `src/css/main.css`:
-
-```css
-/* Primary accent color - Neon Green */
-#00FF8C
-
-/* Secondary accent color - Cyan */
-#00D9FF
-
-/* Background color */
-#121212
-
-/* Card background */
-rgba(26, 26, 26, 0.8)
-```
 ---
 
 ## Customizing the Portfolio
@@ -244,9 +169,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Open-source tools that support learning and experimentation
 
 --- 
-
-
-<div align="center">
-  
-
-</div>
