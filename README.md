@@ -1,8 +1,8 @@
 <h2 align="center">
-  🛡️ Minah Nguyen — Cybersecurity & IT Portfolio
+  Minah Nguyen — Cybersecurity & IT Portfolio
 <br/>
   <a href="https://honeybeemin.github.io/minah-portfolio/" target="_blank">
-🌐 View Live Portfolio
+View Live Portfolio
 </a>
 
 </h2>
@@ -24,7 +24,7 @@
 
 ---
 
-## 👋 About Me
+## About Me
 
 Cybersecurity and IT student with hands-on experience in security labs,
 networking fundamentals, cloud concepts, and data-driven projects.
@@ -71,7 +71,7 @@ The template includes modern UI effects and JavaScript interactions to create a 
 
 ---
 
-## 🚀 Running the Portfolio Locally
+## Running the Portfolio Locally
 
 If you’d like to explore or modify this portfolio locally, follow the steps below.
 
@@ -123,7 +123,7 @@ If you’d like to explore or modify this portfolio locally, follow the steps be
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cyber-portfolio/
@@ -146,7 +146,7 @@ cyber-portfolio/
 
 ---
 
-## 🎨 Customization Guide
+## Customization Guide
 
 ### Changing Colors
 
@@ -167,7 +167,7 @@ rgba(26, 26, 26, 0.8)
 ```
 ---
 
-## 🔧 Customizing the Portfolio
+## Customizing the Portfolio
 
 This portfolio is built on a customizable template that I adapted for my
 cybersecurity and IT background. The structure allows easy updates to content
@@ -183,7 +183,7 @@ and layout without changing the core design.
 - Layout and styling can be adjusted through the CSS files in `src/css/`
 - Minor behavior changes can be made in the JavaScript files under `src/js/`
 
-## 🌐 Browser Support
+## Browser Support
 
 This portfolio is designed to work on all modern browsers.
 
@@ -196,7 +196,7 @@ This portfolio is designed to work on all modern browsers.
 
 ---
 
-## ⚡ Performance & Accessibility
+## Performance & Accessibility
 
 This portfolio prioritizes a clean, responsive user experience using
 modern web standards. Performance and accessibility considerations are
@@ -207,7 +207,7 @@ Formal performance audits (e.g., Lighthouse) can be run as needed.
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - **HTML5** – Semantic structure
 - **CSS3** – Layout and visual styling
@@ -215,7 +215,7 @@ Formal performance audits (e.g., Lighthouse) can be run as needed.
 
 ---
 
-## 📝 Future Improvements
+## Future Improvements
 
 - Continue refining content and projects
 - Add additional cybersecurity-focused work and labs
@@ -223,7 +223,7 @@ Formal performance audits (e.g., Lighthouse) can be run as needed.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
