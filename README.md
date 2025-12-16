@@ -6,10 +6,7 @@ View Live Portfolio
 </a>
 
 </h2>
-<div align="center">
-  <img alt="Portfolio Preview" src="src/assets/images/mockup.png" />
 
-</div>
 <center>
 
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
